@@ -1,1 +1,239 @@
+/* GENEL AYARLAR */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:#ffffff;
+}
+
+/* HERO */
+
+.hero{
+
+    height:100vh;
+
+    background:url("images/hero.jpg") center center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+}
+
+/* LOGO */
+
+nav{
+
+    position:absolute;
+
+    top:30px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:2;
+
+}
+
+.logo{
+
+    width:220px;
+
+}
+
+/* ORTA ALAN */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:900px;
+
+}
+
+.hero-content h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    color:#dddddd;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.hero-content h3{
+
+    color:#ff9800;
+
+    margin-bottom:40px;
+
+}
+
+/* SOSYAL MEDYA */
+
+.social-buttons{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:280px;
+
+    padding:20px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:#ff9800;
+
+}
+
+.card img{
+
+    width:60px;
+
+    margin-bottom:15px;
+
+}
+
+.card span{
+
+    display:block;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#000;
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:#ff9800;
+
+    margin-bottom:10px;
+
+}
+
+footer small{
+
+    color:#999;
+
+}
+
+/* MOBİL */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.logo{
+
+width:160px;
+
+}
+
+.card{
+
+width:90%;
+
+}
+
+}
