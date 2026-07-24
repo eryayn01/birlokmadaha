@@ -1,5 +1,3 @@
-/* GENEL AYARLAR */
-
 *{
     margin:0;
     padding:0;
@@ -12,17 +10,18 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#0b0b0b;
-    color:#ffffff;
+    background:#fffaf3;
+    color:#333;
 }
+
 
 /* HERO */
 
 .hero{
 
-    height:100vh;
+    min-height:90vh;
 
-    background:url("images/hero.jpg") center center/cover no-repeat;
+    background:url("images/hero.jpg") center/cover no-repeat;
 
     position:relative;
 
@@ -38,19 +37,17 @@ body{
 
 }
 
+
 .overlay{
 
     position:absolute;
 
-    top:0;
-    left:0;
+    inset:0;
 
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.65);
+    background:rgba(0,0,0,.55);
 
 }
+
 
 /* LOGO */
 
@@ -70,13 +67,16 @@ nav{
 
 }
 
+
 .logo{
 
-    width:220px;
+    width:200px;
 
 }
 
-/* ORTA ALAN */
+
+
+/* HERO YAZI */
 
 .hero-content{
 
@@ -84,115 +84,214 @@ nav{
 
     z-index:2;
 
-    width:90%;
-
     max-width:900px;
+
+    width:90%;
 
 }
 
+
 .hero-content h1{
 
-    font-size:58px;
+    font-size:52px;
 
-    line-height:1.2;
+    line-height:1.25;
+
+    color:white;
 
     margin-bottom:25px;
 
 }
 
+
 .hero-content p{
 
-    font-size:22px;
+    color:#eee;
 
-    color:#dddddd;
+    font-size:21px;
 
-    line-height:1.8;
+    line-height:1.7;
 
-    margin-bottom:30px;
-
-}
-
-.hero-content h3{
-
-    color:#ff9800;
-
-    margin-bottom:40px;
+    margin-bottom:35px;
 
 }
 
-/* SOSYAL MEDYA */
 
-.social-buttons{
 
-    display:flex;
+/* INSTAGRAM BUTONU */
 
-    gap:25px;
 
-    justify-content:center;
+.instagram-btn{
 
-    flex-wrap:wrap;
+    display:inline-block;
 
-}
-
-.card{
-
-    width:280px;
-
-    padding:20px;
-
-    text-decoration:none;
+    background:#e1306c;
 
     color:white;
 
-    border-radius:20px;
+    padding:16px 35px;
 
-    backdrop-filter:blur(12px);
+    border-radius:40px;
 
-    background:rgba(255,255,255,.08);
+    text-decoration:none;
 
-    border:1px solid rgba(255,255,255,.15);
-
-    transition:.35s;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-    background:#ff9800;
-
-}
-
-.card img{
-
-    width:60px;
-
-    margin-bottom:15px;
-
-}
-
-.card span{
-
-    display:block;
-
-    font-size:20px;
+    font-size:18px;
 
     font-weight:600;
 
+    transition:.3s;
+
 }
 
-/* FOOTER */
 
-footer{
+.instagram-btn:hover{
 
-    background:#000;
+    transform:scale(1.05);
 
-    padding:35px;
+}
+
+
+/* BÖLÜMLER */
+
+
+.about,
+.works,
+.social{
+
+    padding:70px 10%;
 
     text-align:center;
 
 }
+
+
+.about h2,
+.works h2,
+.social h2{
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+    color:#b45f06;
+
+}
+
+
+.about p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+/* NELER YAPIYORUZ */
+
+
+.items{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+
+.items div{
+
+    background:white;
+
+    width:280px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+.items div:first-letter{
+
+    font-size:35px;
+
+}
+
+
+.items h3{
+
+    margin:15px 0;
+
+    color:#333;
+
+}
+
+
+.items p{
+
+    color:#666;
+
+}
+
+
+
+/* SOSYAL */
+
+
+.social{
+
+    background:#fff;
+
+}
+
+
+.social a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:#e1306c;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:#1c1c1c;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
 
 footer p{
 
@@ -202,15 +301,13 @@ footer p{
 
 }
 
-footer small{
 
-    color:#999;
-
-}
 
 /* MOBİL */
 
+
 @media(max-width:768px){
+
 
 .hero-content h1{
 
@@ -218,22 +315,35 @@ font-size:34px;
 
 }
 
+
 .hero-content p{
 
-font-size:18px;
+font-size:17px;
 
 }
+
 
 .logo{
 
-width:160px;
+width:150px;
 
 }
 
-.card{
 
-width:90%;
+.about h2,
+.works h2,
+.social h2{
+
+font-size:28px;
 
 }
+
+
+.items div{
+
+width:100%;
+
+}
+
 
 }
