@@ -259,3 +259,34 @@ width:180px;
 }
 
 }
+.contact-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto;
+}
+
+.contact-social a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 12px 22px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.contact-social a:hover {
+    transform: translateY(-5px);
+}
+
+.contact-social img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
