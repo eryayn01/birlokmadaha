@@ -1,2 +1,0 @@
-# birlokmadaha
-www.birlokmadaha.com
