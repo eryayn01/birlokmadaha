@@ -9,42 +9,56 @@
     <title>Bir Lokma Daha | Türkiye'nin Lezzet Haritasını Birlikte Keşfediyoruz</title>
 
     <meta name="description"
-        content="Eray ve Mevsim ile Türkiye'nin dört bir yanındaki restoranları, kafeleri, yöresel lezzetleri ve dünya mutfaklarını keşfedin.">
+        content="Eray ve Mevsim ile Türkiye'nin dört bir yanındaki restoranları, kafeleri, yöresel lezzetleri ve dünya mutfaklarını keşfedin. Gerçek deneyimler, samimi yorumlar ve lezzet rotaları.">
 
     <meta name="keywords"
-        content="Bir Lokma Daha, restoran, kafe, gastronomi, yemek, Türkiye, yöresel lezzetler">
+        content="Bir Lokma Daha, restoran, kafe, gastronomi, yemek, Türkiye, yöresel lezzetler, food blog">
 
     <meta name="author" content="Bir Lokma Daha">
 
-    <link rel="icon" href="images/logo.png">
+    <meta name="robots" content="index,follow">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title"
+        content="Bir Lokma Daha">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta property="og:description"
+        content="Türkiye'nin Lezzet Haritasını Birlikte Keşfediyoruz.">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta property="og:image"
+        content="images/hero.jpg">
+
+    <meta property="og:type"
+        content="website">
+
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
     <div class="container">
 
-        <a href="#home" class="logo">
+        <a href="#" class="logo">
 
             <img src="images/logo.png" alt="Bir Lokma Daha Logo">
 
         </a>
 
-        <nav>
+        <nav class="navbar">
 
             <ul>
 
@@ -60,251 +74,132 @@
 
         </nav>
 
+        <div class="social-top">
+
+            <a href="https://instagram.com/birlokmadaha01" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="https://youtube.com/@birlokmadaha" target="_blank">
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </a>
+
+        </div>
+
     </div>
 
 </header>
 
 <main>
 
-    <!-- HERO -->
+<section class="hero" id="home">
 
-    <section class="hero" id="home">
+    <div class="container hero-grid">
 
-        <div class="container hero-grid">
+        <div class="hero-content">
 
-            <div class="hero-text">
+            <span class="hero-tag">
 
-                <span class="hero-badge">
-                    🍽️ Gastronomi • Seyahat • Keşif
-                </span>
+                🍽 Gastronomi • Seyahat • Keşif
 
-                <h1>
-                    Türkiye'nin Lezzet Haritasını
-                    <span>Birlikte Keşfediyoruz</span>
-                </h1>
+            </span>
 
-                <p>
+            <h1>
 
-                    Biz Eray ve Mevsim.
+                Türkiye'nin Lezzet Haritasını
 
-                    Türkiye'nin dört bir yanında restoranları,
-                    kafeleri, yöresel lezzetleri ve dünya mutfaklarını
-                    ziyaret ediyor, gerçek deneyimlerimizi
-                    sizlerle paylaşıyoruz.
+                <span>Birlikte Keşfediyoruz</span>
 
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="https://instagram.com/birlokmadaha01" target="_blank" class="btn">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                        Instagram
-
-                    </a>
-
-                    <a href="https://youtube.com/@birlokmadaha" target="_blank" class="btn secondary">
-
-                        <i class="fa-brands fa-youtube"></i>
-
-                        YouTube
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-image">
-
-                <!-- hero.jpg daha sonra eklenecek -->
-
-                <img src="images/Birlokma daha logo.png" class="footer-logo">
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <div class="container">
-
-            <h2>Biz Kimiz?</h2>
+            </h1>
 
             <p>
 
-                Bir Lokma Daha, Eray ve Mevsim'in birlikte çıktığı
-                gastronomi yolculuğunun dijital günlüğüdür.
+                Biz Eray ve Mevsim.
 
-                Gittiğimiz mekanlarda yalnızca yemekleri değil;
-
-                hizmet kalitesini,
-
-                atmosferi,
-
-                fiyat-performans dengesini
-
-                ve gerçek deneyimlerimizi objektif şekilde paylaşıyoruz.
+                Türkiye'nin dört bir yanında restoranları,
+                kafeleri, sokak lezzetlerini ve dünya mutfağını
+                keşfediyor, gerçek deneyimlerimizi samimi bir
+                dille sizlerle paylaşıyoruz.
 
             </p>
 
-        </div>
+            <div class="hero-buttons">
 
-    </section>
-
-    <!-- DISCOVER -->
-
-    <section id="discover">
-
-        <div class="container">
-
-            <h2>Neler Keşfediyoruz?</h2>
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <i class="fa-solid fa-utensils"></i>
-
-                    <h3>Restoranlar</h3>
-
-                    <p>
-
-                        Şehrin en iyi restoranlarını ziyaret ediyoruz.
-
-                    </p>
-
-                </article>
-
-                <article class="card">
-
-                    <i class="fa-solid fa-mug-hot"></i>
-
-                    <h3>Kafeler</h3>
-
-                    <p>
-
-                        Kahve duraklarını ve özgün kafeleri keşfediyoruz.
-
-                    </p>
-
-                </article>
-
-                <article class="card">
-
-                    <i class="fa-solid fa-earth-europe"></i>
-
-                    <h3>Dünya Mutfağı</h3>
-
-                    <p>
-
-                        Farklı ülkelerin lezzetlerini deneyimliyoruz.
-
-                    </p>
-
-                </article>
-
-                <article class="card">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <h3>Yöresel Lezzetler</h3>
-
-                    <p>
-
-                        Türkiye'nin eşsiz mutfak kültürünü tanıtıyoruz.
-
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section id="contact">
-
-        <div class="container">
-
-            <h2>İletişim</h2>
-
-            <div class="contact-box">
-
-                <p>
+                <a href="https://instagram.com/birlokmadaha01"
+                    target="_blank"
+                    class="btn">
 
                     <i class="fa-brands fa-instagram"></i>
 
-                    @birlokmadaha01
+                    Instagram
 
-                </p>
+                </a>
 
-                <p>
+                <a href="https://youtube.com/@birlokmadaha"
+                    target="_blank"
+                    class="btn btn-outline">
 
                     <i class="fa-brands fa-youtube"></i>
 
-                    @birlokmadaha
+                    YouTube
 
-                </p>
-
-                <p>
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    +90 538 843 92 92
-
-                </p>
-
-                <p>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    birlokmadaha@outlook.com.tr
-
-                </p>
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+        <div class="hero-image">
 
-</main>
+            <img src="images/hero.jpg"
+                alt="Bir Lokma Daha Gastronomi">
 
-<footer>
-
-    <div class="container">
-
-        <img src="images/logo.png" alt="Logo" class="footer-logo">
-
-        <h3>Bir Lokma Daha</h3>
-
-        <p>
-
-            Türkiye'nin Lezzet Haritasını Birlikte Keşfediyoruz.
-
-        </p>
-
-        <small>
-
-            © 2026 Bir Lokma Daha | Tüm Hakları Saklıdır.
-
-        </small>
+        </div>
 
     </div>
 
-</footer>
+</section>
 
-<script src="script.js"></script>
+<section class="stats">
 
-</body>
+    <div class="container stats-grid">
 
-</html>
+        <div class="stat-item">
+
+            <h2>100+</h2>
+
+            <p>Restoran</p>
+
+        </div>
+
+        <div class="stat-item">
+
+            <h2>40+</h2>
+
+            <p>Şehir</p>
+
+        </div>
+
+        <div class="stat-item">
+
+            <h2>500+</h2>
+
+            <p>Lezzet</p>
+
+        </div>
+
+        <div class="stat-item">
+
+            <h2>100K+</h2>
+
+            <p>Takipçi Hedefi</p>
+
+        </div>
+
+    </div>
+
+</section>
