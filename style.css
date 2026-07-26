@@ -337,3 +337,310 @@ section{
     color:#ddd;
 
 }
+/* ===========================================
+   BİZ KİMİZ
+=========================================== */
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-heading span{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+    font-size:2.7rem;
+
+    margin:15px 0;
+
+}
+
+.section-heading p{
+
+    color:#bdbdbd;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-content h3{
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.about-content p{
+
+    color:#d0d0d0;
+
+    margin-bottom:20px;
+
+}
+
+.about-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.about-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#1d1d1d;
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.about-list i{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================
+   KEŞİF KARTLARI
+=========================================== */
+
+.discover{
+
+    background:var(--dark2);
+
+}
+
+.discover-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.discover-card{
+
+    background:#202020;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.discover-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#292929;
+
+}
+
+.discover-card i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.discover-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.discover-card p{
+
+    color:#c8c8c8;
+
+}
+
+/* ===========================================
+   ŞEHİRLER
+=========================================== */
+
+.city-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.city-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+.city-card img{
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.city-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.city-overlay{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    padding:25px;
+
+    background:linear-gradient(transparent,rgba(0,0,0,.92));
+
+}
+
+.city-overlay h3{
+
+    font-size:1.5rem;
+
+    margin-bottom:8px;
+
+}
+
+.city-overlay span{
+
+    color:#dddddd;
+
+}
+
+/* ===========================================
+   SON KEŞİFLER
+=========================================== */
+
+.latest{
+
+    background:var(--dark2);
+
+}
+
+.latest-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.latest-card{
+
+    background:#1f1f1f;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.latest-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.latest-card img{
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.latest-card h3{
+
+    padding:20px 20px 10px;
+
+}
+
+.latest-card p{
+
+    padding:0 20px 25px;
+
+    color:#cfcfcf;
+
+}
