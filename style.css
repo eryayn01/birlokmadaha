@@ -1040,3 +1040,19 @@ section{
     padding:0 20px 25px;
     color:#c8c8c8;
 }
+.contact-card {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card i,
+.contact-card h3,
+.contact-card p {
+    color: inherit;
+}
